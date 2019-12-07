@@ -6,6 +6,10 @@ import Pagination from "./components/Pagination";
 import { CharacterModal } from './components/CharacterModal'
 import {withCharacters} from "./context/CharacterContext";
 import { getDetails } from './utils/getCharacterDetails'
+import loader from './image/sample.gif';
+import './animate.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner'
 
 
 const App = ({isLoading, characters, characterPages, fetchCharactersByNamePaginated, fetchCharactersPaginated}) => {
@@ -78,9 +82,18 @@ const App = ({isLoading, characters, characterPages, fetchCharactersByNamePagina
         <Pagination pages={characterPages} onPageChanged={onPageChanged} className="pagination"/>
         <Row className="Scrollable">
           {isLoading ? (
-            <div className="Loader">
-              <div className="loader">
-                  <div className="star"></div>
+            <div className="Loader1 animated flip">
+              <div className="loader1">
+                  <div className="star1">
+                  <Loader
+                    type="Triangle"
+                    color="#00BFFF"
+                    height={400}
+                    width={400}
+                    timeout={3000} //3 secs
+
+                  />
+                  </div>
               </div>
             </div>
           ) : characters.map(character => (

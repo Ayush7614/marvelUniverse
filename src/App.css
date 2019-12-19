@@ -304,11 +304,17 @@ div.searchBar{
   color: rgb(202,189,188);
 }
 
+.footer {
+  background-image: url("./image/footer.png");
+  background-repeat: repeat-x;
+}
+
 .footer p {
   margin: 0 auto;
   padding: 3px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  color: #fdfdfd;
 }
 
 li.page-item:nth-child(1) .page-link {

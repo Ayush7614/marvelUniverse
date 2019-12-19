@@ -240,23 +240,41 @@ div.searchBar{
 
 .displayCard.card {
   width: 14rem;
+  height: 300px;
   margin: 1rem 0;
   box-shadow: 0 0 15px 10px #67070b;
   transition: all 0.75s ease;
   border-radius: 1rem;
-  background: #cabdbc;
+  position: relative;
+  margin-right: 0.2rem;
 }
 
 .card .card-img-top {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  position: relative;
+  height: 100%;
+}
+
+.card .card-body{
+  padding: 0%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 70%;
+  opacity: 0.7;
+  height: 60px; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card .card-body .card-title.h5 {
   margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #510e11;
+  color: #fff;
+  position: relative;
+  background-color: #000;
 }
 
 .pagination {
